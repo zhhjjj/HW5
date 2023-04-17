@@ -1,0 +1,32 @@
+class Human:
+    
+    class_attribute_1_eyes = 2
+    class_attribute_2_nose = 1
+    class_attribute_3_limbs = 4
+    class_attribute_4_heart = 1
+    
+    def __init__(self, hair_color, eye_color, race, gender):
+        self.instance_attribute_hair_color = hair_color
+        self.instance_attribute_eye_color = eye_color
+        self.instance_attribute_race = race
+        self.instance_attribute_gender = gender
+        
+Jay_Chou = Human(hair_color="black", eye_color="black", race="Asian", gender="male")
+Tom_Hanks = Human(hair_color="grey", eye_color="green", race="Caucasian", gender="male")
+
+print(Jay_Chou.instance_attribute_race)
+print(Tom_Hanks.instance_attribute_race)
+
+
+
+import math
+class Point(object):
+    def __init__(self, x, y):
+        self.instance_attribute_x=0
+        self.instance_attribute_y=0
+    def distance(self):
+        return math.sqrt(self.x**2 + self.y**2)
+p1 = Point(0,0)
+p1.x=3
+p1.y=4
+p1.distance()
